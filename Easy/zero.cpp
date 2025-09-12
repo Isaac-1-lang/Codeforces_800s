@@ -3,16 +3,18 @@ using namespace std;
 
 int main() {
     int n;
-    int number,divisor,moves;
+    int moves;
+    long long number, divisor;
     vector<int> levels;
     cin >> n;
     moves=0;
     while (n--)
     {
-        cin >> number >> divisor;
-        while(number>0) {
+        cin >> number >> divisor;// Enter the number and the divisor
+        while(number>0) {// We might decrement or divide but count each happening!
             if(number%divisor==0) {
-                number/=divisor;
+               long long q= number/divisor;
+                number=q;
             } else {
                 number--;
             }
