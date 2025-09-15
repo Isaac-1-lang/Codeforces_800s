@@ -3,8 +3,9 @@ using namespace std;
 
 
 int main() {
-     int n;
+    int n;
     cin >> n;
-    cout << 25;
+    cout << (n-1)/5+1 << endl;
     return 0;
-}
+    
+ }
