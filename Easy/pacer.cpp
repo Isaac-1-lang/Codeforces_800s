@@ -9,7 +9,6 @@ int main() {
         int n;
         long long m;
         cin >> n >> m;
-
         vector<pair<long long,int>> req(n);
         for (int i = 0; i < n; i++) {
             cin >> req[i].first >> req[i].second;
